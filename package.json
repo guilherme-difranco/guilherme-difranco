@@ -1,0 +1,13 @@
+{
+    "name": "github-readme-stats-generator",
+    "version": "1.0.0",
+    "description": "Script para gerar estatísticas do GitHub com contribuições privadas",
+    "main": "generate-stats.js",
+    "scripts": {
+      "generate": "node generate-stats.js"
+    },
+    "dependencies": {
+      "puppeteer": "^19.11.1"
+    }
+  }
+  
