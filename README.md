@@ -1,7 +1,7 @@
 ## Hello! I'm Guilherme 👋
 
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=guilherme-difranco&show_icons=true&theme=radical)
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=guilherme-difranco&layout=compact&theme=radical)](https://github.com/guilherme-difranco/github-readme-stats)
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=guilherme-difranco&show_icons=true&theme=radical&count_private=true&include_all_commits=true)
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=guilherme-difranco&layout=compact&theme=radical&count_private=true)](https://github.com/guilherme-difranco/github-readme-stats)
 
 ### 🛠️ Technologies and Tools
 

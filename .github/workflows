@@ -1,0 +1,38 @@
+name: Update GitHub Readme Stats
+
+on:
+  schedule:
+    - cron: '0 0 * * 1' # Executa toda segunda-feira
+  workflow_dispatch:
+
+jobs:
+  stats:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Run GitHub Readme Stats
+        uses: anuraghazra/github-readme-stats@v4
+        with:
+          token: ${{ secrets.GH_TOKEN }}
+          username: guilherme-difranco
+          show_icons: true
+          theme: radical
+          hide_border: false
+          include_all_commits: true
+          cache_seconds: 3600
+          layout: default
+          count_private: true
+          show_private: true
+
+      - name: Commit and Push if Changed
+        run: |
+          git config --local user.name "github-actions[bot]"
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          if ! git diff --cached --quiet; then
+            git commit -m "Update GitHub Readme Stats"
+            git push
+          fi
